@@ -1,20 +1,59 @@
 import React from 'react'
+import Typewriter from "typewriter-effect"
 import Image from 'next/image'
-import { tech2 } from '@/public/assets'
+import { tech3 } from '@/public/assets'
+
 const Banner = () => {
   return (
-    <section id='home' className='max-w-contentContainer mx-auto py-10 mdl:py-24 flax flex-col gap-4
-        lgl:gap-8 mdl:px-10 xl:px-4'>
+    <div className=' bg-slate-100 px-32 py-32 bg-cover bg-fixed flex items-center '>
+      
+      <div className='container mx-auto flex flex-row '>
+        <div className='basis-1/2'>
+          <span className='text-2xl md:text-5xl font-bold'>G COMPANY</span>
+          <br />
+          <div className='pt-1'> </div>
+          <span className='text-blue-900 font-bold text-3xl md:text-5xl'>Lorem ipsum dolor sit amet.</span>
             
-        <div>
-            <Image className='w-50  mx-auto rounded-3xl border-2 border-teal-700 opacity-70 hover:opacity-100' 
-                    src={tech2} alt="banner" />     
+            <div className='pt-4'></div>
+            <h3 className='md:text-2xl mt-3 '>
+            <Typewriter options={
+                {
+                  strings: [ "Cloud Computing" , "cyber security" , "AI/ML", "NodeJS" ] ,
+                  delay: 3 ,
+                  deleteSpeed: 4 ,
+                  autoStart: true ,
+                  loop: true 
+                }
+              } />
+            </h3>
+            <div className='pt-4'></div>
+            <span className='text-black'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fugit 
+            necessitatibus maxime quia minus, molestiae saepe? Quod, fugiat voluptates. Optio nemo magnam, excepturi 
+            nihil at dolorum praesentium ipsam, commodi odit illum repudiandae doloribus, quaerat fuga!</span>
+
+            <div className='pt-4'>
+            <div className='flex space-x-6'>
+            <button className='p-4 rounded text-white bg-blue-900'>Explore</button>
+            <button className='p-4 rounded text-blue-900 bg-slate-300'>Service</button>
+            </div>
+          </div>
         </div>
-        <div className='font-bold tracking-wide text-emerald-300 font-bodyFont text-center text-3xl 
-            uppercase underline underline-offset-4'>Welcome to G company</div>      
-            
-    </section>
+      <div className='basis-1/2 px-0 py-0 '>
+        <Image src={tech3} alt='tech'/>
+      </div>   
+    </div>
+  </div>
+
+
   )
+  
 }
 
-export default Banner
+export default Banner;
+
+
+
+
+
+  
+    
