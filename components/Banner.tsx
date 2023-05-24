@@ -7,8 +7,8 @@ const Banner = () => {
   return (
     <div className=' bg-slate-100 px-32 py-32 bg-cover bg-fixed flex items-center '>
       
-      <div className='container mx-auto flex flex-row '>
-        <div className='basis-1/2'>
+      <div className='container mx-auto flex flex-col lgl:flex-row '>
+        <div className='basis-1/2 w-full lgl:w-2/3 py-2'>
           <span className='text-2xl md:text-5xl font-bold'>G COMPANY</span>
           <br />
           <div className='pt-1'> </div>
@@ -38,7 +38,7 @@ const Banner = () => {
             </div>
           </div>
         </div>
-      <div className='basis-1/2 px-0 py-0 '>
+      <div className='basis-1/2 px-0 py-0 w-full lgl:w-1/3 '>
         <Image src={tech3} alt='tech'/>
       </div>   
     </div>

@@ -20,8 +20,8 @@ const contact = () => {
   <SectionTitle title='Contact Us' />
 
   <div className='grid grid-cols-2 gap-2'>
-      <div className="container -mx-4 flex flex-wrap lg:justify-between ">
-        <div className="w-full px-4">
+      <div className="container -mx-4 flex flex-col lgl:flex-row flex-wrap lg:justify-between ">
+        <div className="w-full  px-4">
           <h2 className="pt-8 font-bold italic mb-6 text-[16px] uppercase sm:text-[16px] lg:text-[26px] 
                     xl:text-[ 16px] text-blue-900"> GET IN TOUCH WITH US </h2>
             <p className=" mb-9 text-base leading-relaxed">
@@ -63,7 +63,7 @@ const contact = () => {
 
     
       <div className="w-full pt-10 grid">
-        <div className=" rounded-lg bg-teal-950 shadow-lg sm:p-8">
+        <div className=" rounded-lg bg-teal-900 shadow-lg sm:p-8">
           <form>
             <div className="mb-6">
               <input
