@@ -27,6 +27,7 @@ const Gallery = () => {
       const product= SliderData.map(item=>(
         // eslint-disable-next-line react/jsx-key
         <Card 
+          key={item.key}
           image={item.image}
           desc={item.desc}
           />
